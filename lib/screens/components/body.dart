@@ -22,7 +22,18 @@ class Body extends StatelessWidget {
               width: getProportionateScreenWidth(233),
               child: AspectRatio(
                 aspectRatio: 1.32,
-                child: Container(),
+                child: Container(
+                  padding: EdgeInsets.all(getProportionateScreenWidth(20)),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: Theme.of(context).primaryIconTheme.color,
+                    ),
+                  ),
+                  child: Column(
+                    children: [Text("Kolkata, India")],
+                  ),
+                ),
               ),
             )
           ],
