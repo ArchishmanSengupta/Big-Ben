@@ -1,7 +1,3 @@
-import 'dart:math';
-
-import 'package:analog_clock/constants.dart';
-import 'package:analog_clock/size_config.dart';
 import 'package:flutter/material.dart';
 
 import 'clock.dart';
