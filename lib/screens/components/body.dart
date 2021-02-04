@@ -31,7 +31,28 @@ class Body extends StatelessWidget {
                     ),
                   ),
                   child: Column(
-                    children: [Text("Kolkata, India")],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Kolkata, India",
+                        style: Theme.of(context).textTheme.headline4.copyWith(
+                            fontSize: getProportionateScreenWidth(16)),
+                      ),
+                      SizedBox(height: 5),
+                      Text("0 HRS | IST"),
+                      Row(
+                        children: [
+                          Text(
+                            "9 : 20",
+                            style: Theme.of(context).textTheme.headline4,
+                          ),
+                          RotatedBox(
+                            quarterTurns: 3,
+                            child: Text("AM"),
+                          ),
+                        ],
+                      )
+                    ],
                   ),
                 ),
               ),
